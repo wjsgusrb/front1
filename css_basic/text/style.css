@@ -1,0 +1,11 @@
+.text-a{
+    font-family: 'Noto Sans KR';
+    font-size: 40px;
+    font-weight: 900;
+
+    font-style: italic;
+    text-align: center; /*블록 안에있는 텍스트 정렬*/
+    line-height: 36px;
+
+    text-decoration: underline;
+}

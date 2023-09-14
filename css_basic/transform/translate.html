@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .translate-box{
+            display: inline-block;
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            /* transform: translate(10px, 10px); */
+            animation: move 5s linear 2s infinite alternate;
+        }
+
+        /* @keyframes shimmy{
+            0%{
+                transform: translate(0,0);
+                background-color: aqua;
+            }
+            12.5%{
+                transform: translate(60px,0px);
+                background-color: rgb(46, 36, 85);
+            }
+            25%{
+                transform: translate(60px, 60px);
+                background-color: rgb(122, 36, 62);
+            }
+            37.5%{
+                transform: translate(0px, 60px);
+                background-color: rgb(87, 136, 31);
+            }
+            50%{
+                transform: translate(0,0);
+                background-color: rgb(35, 63, 63);
+            }
+            62.5%{
+                transform: translate(0px, 60px);
+                background-color: rgb(63, 22, 39);
+            }
+            75%{
+                transform: translate(60px, 60px);
+                background-color: rgb(187, 207, 207);
+            }
+            87.5%{
+                transform: translate(60px,0px);
+                background-color: rgb(28, 107, 55);
+            }
+            100%{
+                transform: translate(0,0);
+                background-color: rgb(114, 5, 65);
+            }
+        } */
+
+        @keyframes move{
+            0%{
+                transform: translate(0,0);
+                background-color: aqua;
+            }
+            25%{
+                transform: translate(150px,0px);
+                background-color: rgb(46, 36, 85);
+            }
+            50%{
+                transform: translate(150px, 150px);
+                background-color: rgb(122, 36, 62);
+            }
+            75%{
+                transform: translate(0px, 150px);
+                background-color: rgb(87, 136, 31);
+            }
+            100%{
+                transform: translate(0,0);
+                background-color: rgb(35, 63, 63);
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>-----------------------------</p>
+    <div class="translate-box"></div>
+    <p>-----------------------------</p>
+</body>
+</html>

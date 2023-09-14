@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        border: 3px solid black;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 600px;
+        height: 800px;
+    }
+    .flex-item{
+        color: black;
+        font-size: 50px;
+        padding: 24px;
+        text-align: center;
+    }
+    .item1{
+        background-color: aqua;
+        align-self: flex-start;
+        /* 특정한거 하나만 따로 빼서 쓸때 self 씀 */
+        order: 3; 
+        /* - 붙이면 앞으로 +이면 뒤로 감 */
+        flex: 1;
+        /* 1:1:1 비율 */
+    }
+    .item2{
+        background-color: antiquewhite;
+        align-self: center;
+        order: 1;
+        flex: 2;
+        /* 1:2:1 비율 */
+    }
+    .item3{
+        background-color: blue;
+        flex: 1;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="flex-item item1">1번</div>
+        <div class="flex-item item2">2번</div>
+        <div class="flex-item item3">3번</div>
+    </div>
+</body>
+</html>

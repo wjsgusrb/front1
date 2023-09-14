@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>h1 태그입니다.</h1>
+    <h2>h2 태그입니다.</h2><br>
+    <h3>h3 태그입니다.</h3>
+    <h4>h4 태그입니다.</h4>
+    <h5>h5 태그입니다.</h5>
+    <h6>h6 태그입니다.</h6>
+    <hr>
+    안녕하세요 제 이름은 <strong>최지원</strong>입니다<br>
+    안녕하세요 제 이름은 <mark>최지원</mark>입니다<br>
+    안녕하세요 제 이름은 <s>최지원</s>입니다<br>
+    안녕하세요 제 이름은 <u>최지원</u>입니다<br>
+    <em>문자에 기울임을 주는 태그</em><br>
+    <small>원 문자보다 작은 글씨로 보여줌</small>
+    <blockquote style="color: antiquewhite;">블로그나 다른 곳에서 글을 인용할 때</blockquote>
+    <q>인용글에 표시</q><br>
+    m<sup>2</sup><br>
+    32<sub>km</sub>
+    <!--목록태그-->
+    <ul> <!--순서가 필요하지 않은 목록을 만들 때 사용 -->
+        <li>내용 1번</li>
+        <li>내용 2번</li>
+        <li>내용 3번</li>
+        <li>내용 4번</li>
+    </ul>
+    <ol> <!--순서가 필요한 목록을 만들 때 사용 -->
+        <li>내용 1번</li>
+        <li>내용 2번</li>
+        <li>내용 3번</li>
+        <li>내용 4번</li>
+    </ol>
+
+    <!--표 관련 태그-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="3">테이블 제목</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">내용1번</td> <!--내가 사용할 열의 칸 수(병합할 열의 개수)-->
+                
+                <td rowspan="2">내용3번</td> <!--내가 사용할 행의 칸 수(병합할 행의 개수)-->
+            </tr>
+            <tr>
+                <td>내용1번</td>
+                <td>내용2번</td>
+            </tr>
+            <tr>
+                <td>내용1번</td>
+                <td>내용2번</td>
+                <td>내용3번</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 구조 관련 태그 -->
+    <div>div 입니다 <span>span 입니다</span> <span>span 입니다</span></div> <!-- block형식의 공간을 수직 분할한다.-->
+    <span>span 입니다</span> <!-- inline형식의 공간을 수평 분할한다-->
+
+    <iframe width="100" height="100" src="https://www.youtube.com/watch?v=QbV8M2btU8c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!--미디어 태그-->
+    <!--src => 삽입할 이미지의 경로, alt => 이미지를 설명해주는 텍스트(이미지를 불러올때 표시됨)-->
+    <img width="250" height="150" src="./image.jpg" alt="바다가 밤하늘"/>
+
+    <audio src="경로" controls autoplay loop preload="none"></audio>
+    <video src="경로" controls autoplay loop preload="auto" width="250" height="150"></video>
+
+    <!--하이퍼 텍스트-->
+    <a href="https://www.naver.com" target="_blank">네이버로</a>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-U48AAZo_Cw?si=x82i7F6PesOqsH8t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    <!-- form태그 : 사용자가 입력한 data를 보내는 방식과 처리할 프로그램을 정하는 태그 -->
+    <br><br><br>
+    <div>
+        <h2>로그인</h2>
+        <form method="get" action="./server">
+            <input type="text" name="userId" placeholder="아이디를 입력하세요"/>
+            <input type="password" name="userPWD" placeholder="비밀번호 입력하세요"/>
+            <label>
+                <input type="checkbox"/>
+                아이디 저장하기
+            </label>
+            <input type="submit" value="login">
+        </form>
+    </div>
+
+    <br><br><br>
+
+    <!-- 입력태그 -->
+    <button onclick="alert('클릭')" >buttonA</button>
+    <input type="button" value="ButtonB" onclick="alert('클릭')">
+    <span onclick="alert('클릭')">ButtonC</span>
+
+    <select>
+        <option value="blue">파란색</option>
+        <option>빨란색</option>
+        <option>노란색</option>
+    </select>
+
+    <div>
+        <input type="radio" name="color" id="radio-b">
+        <label for="radio-b">파란색</label>
+    </div>
+    <div>
+        <input type="radio" name="color" id="radio-y">
+        <label for="radio-y">노란색</label>
+    </div>
+    <div>
+        <input type="radio" name="color" id="radio=bl">
+        <label for="radio=bl">검정색</label>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        height: 800px;
+        border: 3px solid black;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        /* center, flex-start, flex-end, space-between, space-evenly, space-around, baseline*/
+    }
+    .flex-item{
+        color: black;
+        font-size: 50px;
+        padding: 24px;
+        text-align: center;
+        height: 100px;
+    }
+    .item1{
+        background-color: aqua;
+        padding-top: 10px;
+    }
+    .item2{
+        background-color: antiquewhite;
+        padding-top: 40px;
+    }
+    .item3{
+        background-color: blue;
+        padding-top: 100px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="flex-item item1">1번</div>
+        <div class="flex-item item2">2번</div>
+        <div class="flex-item item3">3번</div>
+    </div>
+</body>
+</html>
